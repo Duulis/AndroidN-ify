@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="xposed_description">Käytä ominaisuuksia Androidin N versiosta laitteilla joissa on Lollipop tai Marshmallow!</string>
+
+    <string name="restart_systemui">Uudelleenkäynnistä SystemUI</string>
+    <string name="restart_systemui_message">Haluatko varmasti käynnistää SystemUIn uudestaan?</string>
+    <string name="restart_broadcast_sent">Uudelleenkäynnistystä pyydetty</string>
+    <string name="activity_about">Tietoja sovelluksesta Android N-ify</string>
+    <string name="about_author">Kehittäjä @MrWasdennnoch</string>
+    <string name="about_translator">Kääntäjä @Duulis</string> <!-- Insert your (preferably XDA) username here -->
+    <string name="about_version">Versio %1$s (%2$d)</string>
+
+    <!-- prefs -->
+    <string name="prefs_not_readable"><![CDATA[<b>Warning:</b> Asetustiedosto ei ole Xposedin luettavissa. Paina saadaksesi lisätietoja&#8230;]]></string>
+    <string name="prefs_not_readable_description"><![CDATA[
+        Xposed can\'t read the preference file of this module, default values will be used in hooks.
+        There are several ways to fix this problem. Also note that this error pops up if you\'ve never
+        opened the app before.<br><br>
+        First, reboot the device (No soft reboot!).<br>
+        If that doesn\'t help, try reinstalling the module.<br>
+        If both attempts fail, ensure that your SELinux mode is set to <i>permissive</i>.
+        <i>Enforcing</i> SELinux might block access to the preference file. In order to change the mode,
+        use the app <tt>SELinuxModeChanger</tt> that you can download
+        <a href="http://forum.xda-developers.com/showthread.php?t=2524485">in this XDA thread</a>.<br>
+        If even that fails, you probably have to live with the default values, sorry :(
+        ]]></string>
+
+    <string name="header_tweaks">Hienosäädöt</string>
+    <string name="header_app">Sovellus</string>
+
+    <string name="app_dark_theme_title">Tumma sovelluksen teema</string>
+    <string name="hide_launcher_icon_title">Piilota ikoni käynnistysvalikosta</string>
+    <string name="hide_launcher_icon">Voi vaatia käynnistysohjelman uudelleenkäynnistyksen</string>
+    <string name="debug_log_title">Virheenkorjausloki</string>
+    <string name="debug_log">Varoitus: Täyttää lokia</string>
+    <string name="share_logcat_title">Jaa logcat</string>
+    <string name="share_logcat">Tallenna logcat tiedostoon</string>
+    <string name="logcat_notif_ongoing_title">Tallennetaan logcat&#8230;</string>
+    <string name="logcat_notif_finished_title">Logcat tallennettu</string>
+    <string name="logcat_notif_preparing">Valmistellaan&#8230;</string>
+    <string name="logcat_notif_ongoing_lines">Tallennettu %1$s riviä&#8230;</string>
+    <string name="logcat_notif_finished_lines">%1$s riviä tallennettu</string>
+    <string name="action_stop">Pysäytä</string>
+    <string name="action_share">Jaa</string>
+
+    <string name="requesting_root">Pyydetään pääkäyttäjän oikeuksia&#8230;</string>
+    <string name="root_failed">READ_LOGS käyttöoikeuden saanti epäonnistui</string>
+    <string name="permission_required">Käyttöoikeus vaadittu</string>
+    <string name="logs_permission_description">
+        In Android versions since Jelly Bean applications aren\'t allowed to read the full logcat anymore.
+        You can however manually grant the READ_LOGS permission with root access.
+        After that the app needs to be restarted in order to apply the newly granted permissions.
+    </string>
+
+    <string name="requires_android_version">Vaadittu versio Android %1$s</string>
+    <string name="not_activated">Moduulia ei ole otettu käyttöön</string>
+
+    <string name="theme_colorPrimary">Pääväri</string>
+
+    <string name="header_lockscreen">Lukitusnäyttö</string>
+    <!-- /prefs -->
+
+    <!-- SETTINGS -->
+    <string name="header_settings">Asetukset</string>
+    <string name="enable_settings_summaries_title">Asetusten yhteenvedot</string>
+    <string name="enable_settings_summaries">Näytä tärkein tieto suoraan kojelaudalla</string>
+    <string name="fix_sound_notif_tile_title">Korjaa "Ääni &amp; ilmoitus" tiili</string>
+    <string name="fix_sound_notif_tile">Jotkut ROMit yhdistävät Ääni- ja Ilmoitustiilet. Ota käytöön nähdäksesi kunnon yhteenvedon tälle tiilelle</string>
+    <string name="enable_n_platlogo_title">N logo pääsiäismunassa</string>
+    <string name="use_namey_mcnameface_title">Käytä \"Namey McNameface\" ikonia</string>
+
+    <string name="disconnected">Yhteys katkaistu</string>
+    <string name="disabled">Poistettu käytöstä</string>
+    <string name="off">POIS</string>
+    <string name="on">PÄÄLLÄ</string>
+    <string name="data_usage_summary">%1$s dataa käytetty</string>
+    <string name="display_summary">Kirkkauden säätö %1$s</string>
+    <string name="sound_summary">Soittoäänen voimakkuus %1$s</string>
+    <string name="apps_summary">%1$d sovellusta asennettu</string>
+    <string name="storage_summary">%1$s kokonaistilasta %2$s käytössä</string>
+    <string name="battery_summary">%1$s - n. %2$s jäljellä</string>
+    <string name="battery_charging_wireless">%1$s - Ladataan langattomasti</string>
+    <string name="battery_charging_usb">%1$s - Ladataan USB-liittimestä</string>
+    <string name="battery_charging_ac">%1$s - Ladataan verkkovirralla</string>
+    <string name="memory_summary">Currently %1$s kokonaismuistista %2$s käytössä</string>
+    <string name="user_summary">Kirjauduttu sisään käyttäjänä %1$s</string>
+    <string name="location_on_power">PÄÄLLÄ / Virransäästö</string>
+    <string name="location_on_device">PÄÄLLÄ / Vain laite</string>
+    <string name="location_on_high">PÄÄLLÄ / Korkea tarkkuus</string>
+    <string name="print_summary">%1$d tulostustyötä</string>
+    <!-- /SETTINGS -->
+
+    <!-- RECENTS -->
+    <string name="header_recents">Viimeisimmät</string>
+    <string name="enable_recents_double_tap_title">Nopea vaihto</string> <!-- That's how Google calls it -->
+    <string name="enable_recents_double_tap">Paina viimeisimmät painiketta kaksi kertaa avataksesi edellisen sovelluksen</string>
+    <string name="double_tap_speed_title">Kaksoispainalluksen nopeus</string>
+    <string name="recents_button_behavior_title">Viimeisimmät painikkeen toiminta</string>
+    <string name="recents_navigation_delay_title">Navigoinnin viive</string>
+    <string name="recents_navigation_delay">Aika kunnes valittu sovellus tuodaan etualalle</string>
+    <string name="enable_large_recents">Suuret viimeisimmät sovellukset</string>
+    <string name="no_recents_image">Vaihda \"ei viimeaikaisia\" kuva</string>
+
+    <string name="no_previous_recents">Ei viimeaikaisia</string>
+
+    <string name="recents_button_behavior_previous">Palaa edelliseen sovellukseen</string>
+    <string name="recents_button_behavior_current">Palaa nykyiseen sovellukseen</string>
+    <string name="recents_button_behavior_cycle">Käy läpi sovelluksia</string>
+    <!-- /RECENTS -->
+
+    <!-- QUICK SETTINGS -->
+    <string name="header_qs">Pika-asetukset</string>
+    <string name="enable_notification_header">Tyylitelty tilapalkki</string>
+    <string name="keep_qs_panel_bg_title">Muuttamaton QS taustakuva</string>
+    <string name="keep_qs_panel_bg">Hyödyllinen teemoille jotka asettavat mukautetun taustakuvan QS paneeliin</string>
+    <string name="notification_header_qs_tiles_count">Näytettävien QS tiilien määrä</string>
+    <string name="notification_header_qs_tiles_count_monitor">tiiltä</string>
+    <string name="battery_tile_show_percentage">Näytä prosentti akkutiilessä</string>
+    <string name="battery_tile_show_percentage_summary">Näytä akun varauksen prosentti akkutiilessä</string>
+    <string name="enable_qs_editor">Ota QS editori käyttööm</string>
+    <string name="allow_fancy_qs_transition">Hieno QS siirtyminen</string>
+    <string name="alternative_header_qs_method_title">Vaihtoehtoinen tapa ladata QS tiilet</string>
+    <string name="alternative_header_qs_method">Ota käyttöön mikäli QS tiilien asettelun kanssa on ongelmia</string>
+    <string name="enable_new_tile_click_behavior">Android N tiilen painalluksen toimintar</string>
+    <string name="enable_new_tile_click_behavior_summary">Tiilen painaminen tilapalkissa vaihtaa sen tilaa ja tiilen painaminen paneelissa laajentaa sen</string>
+    <string name="enable_large_first_row">Suurempi ensimmäinen rivi</string>
+    <string name="enable_large_first_row_summary">Jos käytössäsi on CM, käytä asetusvalikkoa tiilien muokkaamisvalikon sijasta</string>
+    <string name="smaller_header_clock_title">Pienempi kello</string>
+    <string name="smaller_header_clock">Pienennä kellon kokoa laajennetussa tilapalkissa. Hyödyllinen pienemmillä ruuduilla</string>
+    <string name="notification_full_width_volume_title">Kokolevyinen äänenvoimakkuusvalikko</string>
+    <string name="notification_full_width_volume">Poista äänenvoimakkuusvalikon leveyden rajoitus puhelimilla joissa on suurempi näyttö</string>
+    <string name="fix_stuck_inversion_title">Korjaa jumiutunut inversio</string>
+    <string name="fix_stuck_inversion">Joillain laitteilla inversio jää käyttöön kun sen valitsee. Paina pakottaaksesi pois käytöstä</string>
+    <!-- Hide header icons -->
+    <string name="hide_icons_title">Piilota tilapalkista</string>
+    <string name="hide_tuner_icon_title">Piilota SystemUI Tuner ikoni</string>
+    <string name="hide_edit_tiles_title">Piilota tiilien muokkauspainike</string>
+    <string name="hide_carrier_label_title">Piilota operaattorin nimi</string>
+    <!-- /Hide header icons -->
+    <!-- /QUICK SETTINGS -->
+
+    <!-- NOTIFICATIONS -->
+    <string name="header_notifications">Ilmoitukset</string>
+    <string name="notifications_change_style">Tyylitellyt ilmoitukset</string>
+    <string name="notification_dismiss_button_title">Muuta hylkäyspainiketta</string>
+    <string name="notification_dismiss_button">Näytä \"TYHJENNÄ\" hylkäysikonin sijasta</string>
+    <string name="action_search">Haku</string>
+    <string name="notification_blacklisted_apps_title">Mustalistatut sovellukset</string>
+    <string name="notification_blacklisted_apps">Käytä vanhaa ilmoitustyyliä näille sovelluksille</string>
+    <string name="notifications_custom_color_title">Käytä mukautettua korostusväriä</string>
+    <string name="notifications_accent_color_title">Korostusväri</string>
+    <string name="notifications_custom_actions_color_title">Käytä mukautettua toimintojen taustaväriä</string>
+    <string name="notifications_actions_color_title">Toimintojen taustaväri</string>
+    <!-- /NOTIFICATIONS -->
+
+    <!-- UPDATE -->
+    <string name="update_notification_title">Uusi päivitys saatavilla</string>
+    <string name="update_notification">¨Koontiversio %1$d on nyt saatavilla päivityksenä!</string>
+    <string name="update_notification_download">Päivitä</string>
+    <string name="check_for_updates_title">Tarkista päivitykset</string>
+    <string name="check_for_updates">Tarkista päivitykset sovelluksen käynnistyessä</string>
+    <string name="checking_for_update">Tarkistetaan päivityksiä…</string>
+    <string name="check_for_update_fail">Päivitysten tarkistaminen epäonnistui</string>
+    <string name="no_updates">Ei uudempaa versiota saatavilla</string>
+    <string name="update_notification_downloading">Ladataan päivitystä</string>
+    <string name="update_notification_downloading_details">Ladataan koontiversiota %1$d</string>
+    <string name="update_notification_download_fail">Lataus epäonnistui</string>
+    <string name="update_notification_download_fail_details">Koontiversion %1$d lataus epäonnistui</string>
+    <!-- /UPDATE -->
+
+    <!-- EMERGENCY -->
+    <string name="emergency_info">Hätätiedot</string>
+    <string name="enable_emergency_info_title">Ota Hätätiedot käyttöön</string>
+    <string name="edit_emergency_info_title">Muokkaa Hätätietoja</string>
+
+    <string name="header_personal">Henkilökohtaiset</string>
+    <string name="info_fullname">Kokonimi</string>
+    <string name="info_address">Osoite</string>
+    <string name="info_birthdate">Syntymäaika</string>
+
+    <string name="header_medical">Lääketieteelliset</string>
+    <string name="info_bloodtype">Veriryhmä</string>
+    <string name="info_allergies">Allergiat</string>
+    <string name="info_medications">Lääkitykset</string>
+    <string name="info_medicalnotes">Lääketieteelliset tilat ja muistiinpanot</string>
+    <string name="info_organdonor">Elinten luovuttaja</string>
+
+    <string name="info_unspecified">Määrittämätön</string>
+
+    <string name="info_bloodtype_op">0+</string>
+    <string name="info_bloodtype_on">0-</string>
+    <string name="info_bloodtype_ap">A+</string>
+    <string name="info_bloodtype_an">A-</string>
+    <string name="info_bloodtype_bp">B+</string>
+    <string name="info_bloodtype_bn">B-</string>
+    <string name="info_bloodtype_abp">AB+</string>
+    <string name="info_bloodtype_abn">AB-</string>
+    <!-- /EMERGENCY -->
+
+    <string name="yes">Kyllä</string>
+    <string name="no">Ei</string>
+
+    <!-- BATTERY -->
+    <string name="battery">Akku</string>
+    <string name="charged">Ladattu</string>
+    <string name="charging">Ladataan, %1$s</string>
+    <!-- /BATTERY -->
+
+    <!-- QS -->
+    <string name="qs_edit">Muokkaa</string>
+    <string name="qs_edit_detail">Muokkaa tiiliä</string>
+    <string name="drag_to_add_tiles">Vedä lisätäksesi tiiliä</string>
+    <string name="drag_to_remove_tiles">Vedä tänne poistaaksesi</string>
+    <string name="live_display">LiveDisplay</string>
+    <string name="live_display_auto">Automaattinen</string>
+    <string name="live_display_off">Pois</string>
+    <string name="live_display_day">Päivä</string>
+    <string name="live_display_night">Yö</string>
+    <string name="live_display_outdoor">Ulkoilma (kirkas aurinko)</string>
+    <!-- /QS -->
+
+</resources>
